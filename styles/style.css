@@ -46,6 +46,13 @@ html {
 
 .title {
   margin-bottom: 26px;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
 }
 
 .result__video-container {
@@ -88,7 +95,7 @@ html {
 
 .search-form__fieldset-title {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -100,7 +107,7 @@ html {
   height: 27px;
   border: 1px solid #fff;
   background-color: transparent;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -120,15 +127,6 @@ html {
 
 .search-form__textfield:focus {
   outline: 1px solid #fff;
-}
-.title {
-  color: #fff;
-  font-family: Oswald;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 94%;
-  text-transform: uppercase;
 }
 
 .content__accent {
@@ -151,13 +149,21 @@ html {
   text-decoration: underline;
 }
 
-.content__card-link:focus {
-  border: 1px solid #fff;
-  padding: 0;
+.content__card-link:focus,
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: -1px;
 }
 
 .content__video-card-title {
   line-height: 100%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -173,6 +179,11 @@ html {
   width: fit-content;
   height: 22px;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+  padding: 1px;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -183,16 +194,14 @@ html {
   cursor: pointer;
 }
 
-.search-form__label {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 5px;
-  padding: 1px;
+.search-form__label:focus-visible {
+  outline: none;
 }
 
-.search-form__label:focus {
+.search-form__label:focus,
+.search-form__label:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: -1px;
 }
 
 .search-form__submit-button {
@@ -247,7 +256,7 @@ ol {
   border: 1px solid #fff;
   color: #fff;
   text-align: center;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
