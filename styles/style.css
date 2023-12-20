@@ -107,7 +107,7 @@ html {
   height: 27px;
   border: 1px solid #fff;
   background-color: transparent;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -159,6 +159,7 @@ html {
   line-height: 100%;
   color: #fff;
   text-transform: uppercase;
+  font-family: Oswald, sans-serif;
 }
 
 .content__card-link_current {
@@ -194,14 +195,15 @@ html {
   cursor: pointer;
 }
 
-.search-form__label:focus-visible {
+
+.search-form__label:focus {
   outline: none;
 }
 
-.search-form__label:focus,
-.search-form__label:focus-visible {
+
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
-  outline-offset: -1px;
+  
 }
 
 .search-form__submit-button {
